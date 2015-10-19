@@ -20,14 +20,13 @@ class TinderCardEnclosureView: UIView {
     }
     
     func loadDraggableView() {
-        draggableView = TinderCardDraggableView()
+        draggableView = TinderCardDraggableView(frame: CGRectMake(60, 60, self.frame.size.width * 0.7, 400))
+        draggableView.center = self.center
         addSubview(draggableView)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        draggableView.frame = CGRectMake(60, 60, self.frame.size.width * 0.7, 400)
-        draggableView.center = self.center
     }
     
     required init?(coder aDecoder: NSCoder) {
