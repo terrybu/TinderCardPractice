@@ -1,0 +1,1 @@
+Practice building out Tinder swiping from http://guti.in/articles/creating-tinder-like-animations/
